@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.LoginActivity">
+
+     <com.airbnb.lottie.LottieAnimationView
+         android:id="@+id/female_anim"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:lottie_rawRes="@raw/femaleuser"
+         app:lottie_autoPlay="true"
+         app:lottie_loop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_above="@+id/username"
+
+         />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/male_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/maleuser"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+
+      <EditText
+          android:id="@+id/username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:hint="     Enter Username or email"
+          android:inputType="textEmailAddress"
+          android:textColorHint="#000000"
+          android:background="@drawable/greybox"
+          />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="     Enter Password"
+        android:textColorHint="#000000"
+        android:background="@drawable/greybox"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/orangebutton"
+        />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="New user register here..."
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="30dp"
+
+        />
+
+</RelativeLayout>

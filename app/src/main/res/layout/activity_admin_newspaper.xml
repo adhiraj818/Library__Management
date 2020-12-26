@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.AdminNewspaperActivity">
+
+    <TextView
+        android:id="@+id/admin_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Admin"
+        android:fontFamily="serif"
+        android:textSize="35sp"
+        android:textColor="#ffff"
+        />
+
+    <EditText
+        android:id="@+id/newspaper_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/newspaper_lang"
+        android:inputType="text"
+        android:ems="12"
+        android:hint="         enter Newspaper name"
+        android:textColorHint="#ffff"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
+        />
+
+    <EditText
+        android:id="@+id/newspaper_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:ems="12"
+        android:hint="         enter Newspaper language"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/newspaper_pages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newspaper_lang"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:textColor="#ffff"
+        android:ems="12"
+        android:hint="         enter total pages in Newspaper"
+        android:textColorHint="#ffff"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newspaper_pages"
+        android:background="@drawable/orangebutton"
+        android:layout_marginTop="20dp"
+        android:text="Submit details"
+        />
+
+    <Button
+        android:id="@+id/submit_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newspaper_pages"
+        android:background="@drawable/orangebutton"
+        android:layout_marginTop="20dp"
+        android:text="Submit more details"
+        android:layout_toRightOf="@+id/submit_button"
+        />
+
+</RelativeLayout>
